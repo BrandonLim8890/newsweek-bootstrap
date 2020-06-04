@@ -1,0 +1,261 @@
+@import "base"
+// Nav Bar
+
+html
+  background-color: #F4F5F6
+
+body
+  font-family: $font-stack
+
+  .nav-red
+    background-color: $primary-color
+    color: white
+    height: 80px
+
+    .weather
+      font-size: 0.9rem
+
+      img
+        width: 20px
+        height: 20px
+
+    .logo
+      .logo-large
+        width: 395px
+        filter: invert(1)
+
+
+    .btns
+      button
+        border: none
+        font-size: 0.9rem
+
+      .btn-login
+        color: white
+        background-color: $primary-color
+
+      .btn-subscribe
+        color: black
+        background-color: $secondary-color
+        border-radius: 4px
+
+main
+
+  .navbar
+    border-bottom: 1px solid $light-grey
+
+    .nav-list
+      justify-content: space-between
+      align-items: baseline
+      width: calc(100% - 60px)
+
+      .nav-item
+        flex-grow: 1
+        font-size: .9rem
+        border-right: 1px solid $light-grey
+        text-align: center
+
+        a
+          margin: 0
+          color: black !important
+
+          &:hover
+            color: $primary-color !important
+    
+      input
+        background: 0
+        border: 0
+        width: 80px
+        font-size: 0.9rem
+        color: black !important
+
+      .fa-search
+        color: black
+        cursor: pointer
+        font-size: 0.9rem
+
+      &::after
+        flex: 5
+        content: ''
+        display: block
+        width: 60px
+        height: 12px
+        background: $primary-color
+        position: absolute
+        top: 0
+        right: 0
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 0)
+  
+
+  h5
+    font-size: 0.9rem
+    font-weight: bold
+    color: grey
+
+  h4
+    font-weight: bold
+    font-size: 1rem
+
+  h3
+    font-weight: bold
+    font-size: 1.2rem
+
+  p
+    font-size: 0.9rem
+    color: grey
+
+
+
+  .single-content
+
+    figure
+      position: relative
+      width: 100%
+
+      img
+        width: 100%
+      
+      figcaption
+        display: block
+        position: absolute
+        bottom: 0
+        left: 0
+        color: $primary-color
+        font-weight: bold
+        background-color: rgba(230, 230, 230, 0.9)
+
+
+
+  .single-content-left
+
+    figure
+      margin: 0 0.7rem 0.7rem 0
+      float: left
+      width: 72px
+
+      img
+        width: 100%
+  
+
+  .top-story
+    > div
+      border-bottom: 1px solid $light-grey
+
+
+  .heroes, .culture
+
+    .single-content-mini
+      flex-basis: 32%
+
+      figure
+        position: relative
+        width: 100%
+
+        img
+          width: 100%
+        
+        figcaption
+          display: block
+          position: absolute
+          bottom: 0
+          left: 0
+          color: grey
+          font-weight: bold
+          background-color: rgba(192, 217, 228, 0.9)
+          font-size: 0.7rem
+
+  .debate
+    
+    .debate-top
+      border-top: #F92859 solid 4px
+      border-bottom: $light-grey solid 1px
+    
+      &::after
+        position: absolute
+        right: 45%
+        bottom: 39%
+        content: "VS"
+        width: 30px
+        height: 30px
+        background-color: black
+        color: white
+        border-radius: 50%
+        display: block
+        text-align: center
+        vertical-align: center
+        line-height: 2rem
+      
+
+    .debate-bottom
+      border-top: $light-grey solid 1px
+      border-bottom: #1D87FB solid 4px
+
+    .profile
+      width: 80px
+
+    span
+      font-size: 0.8rem
+      color: grey
+
+      span
+        color: black
+    
+    h4
+      font-size: 0.9rem
+
+
+  .opinions
+
+    .single-content-opinion
+      border-bottom: 1px solid $light-grey
+
+      &:last-child
+        border-bottom: none
+      
+      .profile
+        width: 80px
+
+    h4
+      font-size: 0.9rem
+    
+    span
+      font-size: 0.8rem
+      color: grey
+
+    
+footer
+
+  .top-footer
+    border-bottom: 1px $light-grey solid
+
+    .logo
+      fill: $primary-color
+      width: 250px
+    
+    span
+      color: grey
+      font-size: 0.8rem
+
+    .social
+      font-size: 1.3rem
+      color: grey
+
+  .bottom-footer
+    color: grey
+    font-size: 0.9rem
+
+    .editions
+      
+      .language
+        border-right: 1px solid grey
+
+        &:last-child
+          border-right: none
+      
+    .links
+
+      .link
+        border-right: solid 1px grey
+
+        &:last-child
+          border-right: none
